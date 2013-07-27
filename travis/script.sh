@@ -2,6 +2,6 @@
 set -e
 xctool -project LikeApp.xcodeproj -scheme test build test
 
-
+#
 #xctool -workspace workspace.xcworkspace -scheme LikeApp build test
 #MyWorkspace MyScheme
