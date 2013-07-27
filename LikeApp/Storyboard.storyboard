@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="kZX-3j-NBe">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="nbu-ww-9U6">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="Jpd-hW-MeP" sceneMemberID="viewController">
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackTranslucent" id="5gj-HN-jp2">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="1TX-C9-X3y" kind="relationship" relationship="rootViewController" id="n2f-IV-Rp6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2AH-iH-mS7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1599" y="865"/>
+        </scene>
+        <!--My Page View Controller - My Page-->
+        <scene sceneID="Gbg-PT-yGO">
+            <objects>
+                <viewController storyboardIdentifier="MyPage" id="Wy8-Wv-ynS" customClass="KUDMyPageViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Suj-b9-5Sw">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="bOV-pj-st9">
+                                <rect key="frame" x="0.0" y="43" width="320" height="508"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.29803922772407532" green="0.29803922772407532" blue="0.29803922772407532" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="6" minimumInteritemSpacing="0.0" id="MD9-Af-iNs">
+                                    <size key="itemSize" width="151" height="180"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="6" minY="3" maxX="6" maxY="3"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" reuseIdentifier="photocell" id="eC9-Y2-QLy" customClass="KUDPhotoCell">
+                                        <rect key="frame" x="6" y="3" width="151" height="180"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="151" height="180"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" id="wBf-eW-Vqd">
+                                                    <rect key="frame" x="0.0" y="0.0" width="151" height="180"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                </imageView>
+                                                <view alpha="0.70000000000000007" contentMode="scaleToFill" id="R88-fS-uoh">
+                                                    <rect key="frame" x="94" y="143" width="57" height="27"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="star-2.png" id="qNn-mJ-jil">
+                                                            <rect key="frame" x="35" y="5" width="16" height="16"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </view>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="100" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yjv-Vp-54Y">
+                                                    <rect key="frame" x="98" y="145" width="28" height="24"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="14"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" red="0.94141776521231058" green="0.77759293863923173" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <size key="customSize" width="151" height="180"/>
+                                        <connections>
+                                            <outlet property="imageView" destination="wBf-eW-Vqd" id="JwX-Vb-gPD"/>
+                                            <outlet property="totalLike" destination="yjv-Vp-54Y" id="Rga-6q-tZo"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="Wy8-Wv-ynS" id="uou-hM-JfV"/>
+                                    <outlet property="delegate" destination="Wy8-Wv-ynS" id="OOB-Uo-rjr"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.85287786989795922" green="0.82988237988149494" blue="0.83183718336523016" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="K74-Ja-tPo" appends="YES" id="r1X-vc-s8U"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="My Page" id="J0j-2q-rXi">
+                        <barButtonItem key="rightBarButtonItem" title="Uploader" id="IQp-fH-Q1D">
+                            <connections>
+                                <action selector="pushToCameraRollView:" destination="Wy8-Wv-ynS" id="akc-dA-8dg"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="bOV-pj-st9" id="dYj-yJ-doC"/>
+                        <outlet property="panGesture" destination="K74-Ja-tPo" id="Qt2-7K-d4a"/>
+                        <segue destination="ddy-Ye-UCl" kind="modal" identifier="modalToCameraRollView" id="hxK-Hg-cVc"/>
+                        <segue destination="CBe-rA-fDV" kind="push" identifier="pushToDetailPhotoOfMyPage" id="rYP-hu-Ze1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1FA-LI-Xm3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="K74-Ja-tPo"/>
+            </objects>
+            <point key="canvasLocation" x="-501" y="30"/>
+        </scene>
+        <!--View Controller - Camera view-->
+        <scene sceneID="Ym2-A0-gFL">
+            <objects>
+                <viewController id="g7w-z3-rnl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mwd-cA-ona">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Camera view" id="qsP-le-Gy0"/>
+                    <connections>
+                        <segue destination="1TX-C9-X3y" kind="push" identifier="pushToMainView" id="how-HY-CWe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5sE-qa-Yj8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="126" y="-740"/>
+        </scene>
+        <!--Camera Roll View Controller - Camera roll-->
+        <scene sceneID="0EE-K0-XZs">
+            <objects>
+                <viewController storyboardIdentifier="Photos" id="ddy-Ye-UCl" customClass="KUDCameraRollViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BBA-cc-59R">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Camera roll" id="IXa-Hr-VEb"/>
+                    <connections>
+                        <segue destination="3UV-d3-6dJ" kind="modal" identifier="modalToPhotoDetailOfCameraRoll" id="tjy-yi-K6e"/>
+                        <segue destination="g7w-z3-rnl" kind="push" identifier="pushToCameraView" id="sTi-qc-3F4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zYZ-4u-Sgh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="126" y="30"/>
+        </scene>
+        <!--Photo Detail Of Camera Roll View Controller-->
+        <scene sceneID="ZKQ-FF-7Ts">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="3UV-d3-6dJ" customClass="KUDPhotoDetailOfCameraRollViewController" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="ddy-Ye-UCl" kind="push" identifier="pushToCameraRollView" id="a6r-8x-UI3"/>
+                    </connections>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n2h-m9-JXS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="691" y="30"/>
+        </scene>
+        <!--Photo Detail Of My Page View Controller-->
+        <scene sceneID="yYB-G4-dtj">
+            <objects>
+                <viewController id="CBe-rA-fDV" customClass="KUDPhotoDetailOfMyPageViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KJM-d6-iPR">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="shp-9B-TKa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T2F-Tu-p13" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="377" y="870"/>
+        </scene>
+        <!--Photo Detail Of Main View Controller - Photo of Main-->
+        <scene sceneID="Ytd-yG-U1l">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="vmk-bx-IFf" customClass="KUDPhotoDetailOfMainViewController" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="Photo of Main" id="8dg-l6-OP7"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hsM-l3-X2V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-475" y="865"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="RPK-Uv-aWf">
+            <objects>
+                <viewController storyboardIdentifier="Login" id="kZX-3j-NBe" customClass="KUDLoginViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q2K-Qo-nWE">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email@mulodo.com" textAlignment="center" minimumFontSize="17" id="hb9-QO-p32">
+                                <rect key="frame" x="32" y="148" width="257" height="43"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration" label="email"/>
+                                <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="returnKeyboard:" destination="kZX-3j-NBe" eventType="editingDidEndOnExit" id="HbN-HO-mje"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="VS5-l4-n7B">
+                                <rect key="frame" x="89" y="259" width="142" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="connect"/>
+                                <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="17"/>
+                                <state key="normal" title="Connect">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionLogin:" destination="kZX-3j-NBe" eventType="touchUpInside" id="VSd-IC-pHp"/>
+                                </connections>
+                            </button>
+                            <view alpha="0.60000002384185791" contentMode="scaleToFill" id="cRy-Qa-ANc">
+                                <rect key="frame" x="0.0" y="37" width="320" height="69"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Like App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="glu-0N-hWG">
+                                <rect key="frame" x="72" y="52" width="177" height="40"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="37"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Retype password" textAlignment="center" minimumFontSize="17" id="zT6-KC-rn9">
+                                <rect key="frame" x="32" y="203" width="257" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration" label="repassword"/>
+                                <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                <connections>
+                                    <action selector="returnKeyboard:" destination="kZX-3j-NBe" eventType="editingDidEndOnExit" id="EBY-VY-N4Z"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Full name" textAlignment="center" minimumFontSize="17" id="rwb-Zx-VML">
+                                <rect key="frame" x="32" y="203" width="257" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration" label="name"/>
+                                <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="returnKeyboard:" destination="kZX-3j-NBe" eventType="editingDidEndOnExit" id="eHm-vD-5ih"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" id="fYD-w4-cfd">
+                                <rect key="frame" x="32" y="203" width="257" height="43"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration" label="password"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                <connections>
+                                    <action selector="returnKeyboard:" destination="kZX-3j-NBe" eventType="editingDidEndOnExit" id="niD-UV-ixA"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92549019607843142" green="0.94117647058823528" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                        <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="T3Q-uj-IpF" appends="YES" id="tO2-e2-KeU"/>
+                            <outletCollection property="gestureRecognizers" destination="eyn-WP-UM0" appends="YES" id="euc-Yn-K5n"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="buttonMain" destination="VS5-l4-n7B" id="fTd-ZW-bjW"/>
+                        <outlet property="textFieldEmail" destination="hb9-QO-p32" id="Hm9-5f-FhQ"/>
+                        <outlet property="textFieldName" destination="rwb-Zx-VML" id="D7t-3D-m4t"/>
+                        <outlet property="textFieldPassword" destination="fYD-w4-cfd" id="sS6-7e-a3I"/>
+                        <outlet property="textFieldRetypePassword" destination="zT6-KC-rn9" id="Kfx-8q-caM"/>
+                        <segue destination="Jpd-hW-MeP" kind="modal" identifier="modalToMainView" id="ws4-OZ-WtN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zR8-tD-DYd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer cancelsTouchesInView="NO" direction="up" id="T3Q-uj-IpF">
+                    <connections>
+                        <action selector="pushUpTableConnection:" destination="kZX-3j-NBe" id="pVR-j2-6qf"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer cancelsTouchesInView="NO" direction="down" id="eyn-WP-UM0">
+                    <connections>
+                        <action selector="pullDownTableConnection:" destination="kZX-3j-NBe" id="qSu-vu-zKk"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-1798" y="38"/>
+        </scene>
+        <!--Main View Controller - Home-->
+        <scene sceneID="ZT4-ia-klH">
+            <objects>
+                <viewController storyboardIdentifier="Home" id="1TX-C9-X3y" customClass="KUDMainViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wDH-8O-est">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="leh-Jj-Mjw" appends="YES" id="wwg-Lb-gsk"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="0Qa-Vo-nkw">
+                        <barButtonItem key="leftBarButtonItem" title="Log out" id="A0J-tF-rZl">
+                            <connections>
+                                <action selector="logout:" destination="1TX-C9-X3y" id="V9C-TF-SOS"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="My Page" id="LNK-lD-OQ4">
+                            <connections>
+                                <segue destination="Wy8-Wv-ynS" kind="push" identifier="pushToMyPageView" id="K2X-iG-jMH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="panGesture" destination="leh-Jj-Mjw" id="pla-q6-hIn"/>
+                        <outlet property="view" destination="wDH-8O-est" id="gFB-bX-ACg"/>
+                        <segue destination="kZX-3j-NBe" kind="modal" identifier="modalToConnectionController" modalTransitionStyle="flipHorizontal" id="AsV-jj-ERp"/>
+                        <segue destination="vmk-bx-IFf" kind="push" identifier="pushToDetailPhotoOfMainView" id="l0t-Fh-e15"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v1O-iQ-3WX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="leh-Jj-Mjw"/>
+            </objects>
+            <point key="canvasLocation" x="-1168" y="38"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="star-2.png" width="16" height="16"/>
+    </resources>
+    <classes>
+        <class className="KUDCameraRollViewController" superclassName="UIImagePickerController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/KUDCameraRollViewController.h"/>
+        </class>
+        <class className="KUDLoginViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/KUDLoginViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="actionLogin:"/>
+                <relationship kind="action" name="pullDownTableConnection:"/>
+                <relationship kind="action" name="pushUpTableConnection:"/>
+                <relationship kind="action" name="resignTextfield:"/>
+                <relationship kind="action" name="returnKeyboard:"/>
+                <relationship kind="outlet" name="buttonMain" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="textFieldEmail" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textFieldName" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textFieldPassword" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textFieldRetypePassword" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="KUDMainViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/KUDMainViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="logout:"/>
+                <relationship kind="outlet" name="panGesture" candidateClass="UIPanGestureRecognizer"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+            </relationships>
+        </class>
+        <class className="KUDMyPageViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/KUDMyPageViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="pushToCameraRollView:"/>
+                <relationship kind="outlet" name="collectionView" candidateClass="UICollectionView"/>
+                <relationship kind="outlet" name="panGesture" candidateClass="UIPanGestureRecognizer"/>
+            </relationships>
+        </class>
+        <class className="KUDPhotoCell" superclassName="UICollectionViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/KUDPhotoCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="totalLike" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="KUDPhotoDetailOfCameraRollViewController" superclassName="UIPageViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/KUDPhotoDetailOfCameraRollViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="backToLibrary:"/>
+            </relationships>
+        </class>
+        <class className="KUDPhotoDetailOfMainViewController" superclassName="UIPageViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/KUDPhotoDetailOfMainViewController.h"/>
+        </class>
+        <class className="KUDPhotoDetailOfMyPageViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/KUDPhotoDetailOfMyPageViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="photoDetail" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="UICollectionReusableView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionReusableView.h"/>
+        </class>
+        <class className="UICollectionViewCell" superclassName="UICollectionReusableView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewCell.h"/>
+        </class>
+        <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="n2f-IV-Rp6"/>
+        <segue reference="hxK-Hg-cVc"/>
+    </inferredMetricsTieBreakers>
+</document>
