@@ -151,6 +151,8 @@
 		7B31F7F3176B128C00DE9F52 /* KUDPhotoDetailOfMyPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B31F7F1176B128B00DE9F52 /* KUDPhotoDetailOfMyPageViewController.m */; };
 		7B3B750B177D261D009EEB81 /* KUDSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B3B750A177D261D009EEB81 /* KUDSettingViewController.m */; };
 		7B3B750D177D46F3009EEB81 /* KUDSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B3B750C177D46F3009EEB81 /* KUDSettingViewController.xib */; };
+		7B3D387A17A4CC8800BC0A68 /* KUDCallAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE3A3E5178BC9C6004B76E2 /* KUDCallAPI.m */; };
+		7B3D387C17A4CC9800BC0A68 /* KUDParserData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE3A3E1178BC99C004B76E2 /* KUDParserData.m */; };
 		7B6331D41782D9C400D39856 /* KUDMyPageTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B6331D31782D9C400D39856 /* KUDMyPageTest.m */; };
 		7B656682176966DB00740B6A /* KUDMyPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B656681176966DB00740B6A /* KUDMyPageViewController.m */; };
 		7B7344D017671F1100A5172D /* KUDXMLParserLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B7344CF17671F1100A5172D /* KUDXMLParserLogin.m */; };
@@ -1129,6 +1131,8 @@
 				7B2333E1178AAF5D002066B7 /* CollapseClickCell.m in Sources */,
 				7B2333E5178AAF5D002066B7 /* KUDCollapseClick.m in Sources */,
 				7B2333E7178AAF5D002066B7 /* KUDCollapseClickArrow.m in Sources */,
+				7B3D387A17A4CC8800BC0A68 /* KUDCallAPI.m in Sources */,
+				7B3D387C17A4CC9800BC0A68 /* KUDParserData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
