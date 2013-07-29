@@ -1345,8 +1345,8 @@
 		7B15B75B17844C9F00E712E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "-sdk iphonesimulator";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-sdk iphonesimulator";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Libraries\"",
@@ -1375,7 +1375,7 @@
 				);
 				PRODUCT_NAME = "Integation Tests";
 				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphonesimulator*]" = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1383,8 +1383,8 @@
 		7B15B75C17844C9F00E712E5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "-sdk iphonesimulator";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-sdk iphonesimulator";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Libraries\"",
@@ -1413,7 +1413,7 @@
 				);
 				PRODUCT_NAME = "Integation Tests";
 				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphonesimulator*]" = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
