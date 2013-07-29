@@ -1345,6 +1345,7 @@
 		7B15B75B17844C9F00E712E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Libraries\"",
@@ -1372,6 +1373,7 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = "Integation Tests";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1379,6 +1381,7 @@
 		7B15B75C17844C9F00E712E5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Libraries\"",
@@ -1406,6 +1409,7 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = "Integation Tests";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
