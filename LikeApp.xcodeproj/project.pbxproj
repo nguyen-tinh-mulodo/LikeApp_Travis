@@ -856,6 +856,7 @@
 				7B15B71817844C9F00E712E5 /* Sources */,
 				7B15B73917844C9F00E712E5 /* Frameworks */,
 				7B15B74017844C9F00E712E5 /* Resources */,
+				7BA4FEB417A613F400C0BA25 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1033,6 +1034,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		7BA4FEB417A613F400C0BA25 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1219,6 +1233,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = iphonesimulator;
 				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]" = iphonesimulator;
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1233,7 +1248,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				New_Setting = "";
 				ONLY_ACTIVE_ARCH = NO;
+				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphonesimulator*]" = "";
 				SDKROOT = iphoneos;
 			};
@@ -1251,6 +1268,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = iphonesimulator;
 				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]" = iphonesimulator;
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1258,8 +1276,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				New_Setting = "";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphonesimulator*]" = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
